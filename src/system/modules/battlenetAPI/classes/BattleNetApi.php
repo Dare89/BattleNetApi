@@ -5,21 +5,12 @@ namespace BattleNetApi;
 class BattleNetApi extends \System
 {
 	
-	protected static $objInstance;	
+	protected $strApiUrl;
 	
-	protected static $arrCache = array();
+	protected $arrData;
 	
-	public static function get($strKey)
-	{
-		if(isset(static::$arrCache[$strKey]))
-		{
-			return static::$arrCache[$strKey];
-		}
-		if (in_array($strKey, get_class_methods('BattleNetApi'))) {
-			static::$arrCache[$strKey] = static::$strKey;
-		}
-		
-		return static::$arrCache[$strKey];
+	public function __construct() {
+		$this->import('Database');
 	}
 	
 }
