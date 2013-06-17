@@ -39,11 +39,11 @@
  * file to see how back end modules are configured.
  */
 
-$GLOBALS['BE_MOD']['wow'] = array(
+/*$GLOBALS['BE_MOD']['wow'] = array(
 	'character' => array(
 		'tables'	=> array('tl_battlenetapi_wow_character', 'tl_battlenetapi_wow_character_feed'),
 	)
-);
+);*/
 
 
 /**
